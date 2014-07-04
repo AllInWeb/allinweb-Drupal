@@ -10,13 +10,42 @@ function send_message_menu()
         $items['admin/config/system/send_massage'] = array(
         'title' => t('Email templates'),
         'description' => 'Отправка email',
-        'page callback' => 'drupal_get_form',
-        'page arguments' => array('send_message_form'),
+        'page callback' => 'send_message_settings_page',
         'access arguments' => array('administer users'),
         'type' => MENU_NORMAL_ITEM,
         );
 
     return $items;
+}
+
+function send_message_settings_page()
+{
+    if (isset($_GET['type']) && in_array($_GET['type'], array('question', 'answer'))) {
+        $form = drupal_get_form('send_message_form');
+        return drupal_render($form);
+    } else {
+        $links = l(
+            'Сообщение при создании вопроса',
+            url('admin/config/system/send_massage', array('absolute' => true)),
+            array(
+                'query' => array(
+                    'type' => 'question'
+                )
+            )
+        );
+        $links .= '<br>';
+        $links .= l(
+            'Сообщение при создании ответа',
+            url('admin/config/system/send_massage', array('absolute' => true)),
+            array(
+                'query' => array(
+                    'type' => 'answer'
+                )
+            )
+        );
+
+        return $links;
+    }
 }
 
 /**
@@ -27,14 +56,12 @@ function send_message_form($form, &$form_state)
     $form['send_message_e-mail_subject'] = array(
         '#type' => 'textfield',
         '#title' => t('Email subject'),
-        '#description' => t('The subject of the e-mail which will be sent
-to users.'),
+        '#description' => t('The subject of the e-mail which will be sent to users.'),
         '#size' => 40,
         '#maxlength' => 120,
         '#required' => TRUE,
     );
 
-// Textarea for the body of the e-mail.
     $form['send_message_e-mail_text'] = array(
         '#type' => 'textarea',
         '#rows' => 10,
@@ -44,11 +71,61 @@ to users.'),
         '#description'=> t('The text of the email which will be sent to users.'),
     );
 
-// Submit button
+    $form['send_message_e-mail_type'] = array(
+        '#type' => 'hidden',
+        '#value' => $_GET['type']
+    );
+
     $form['submit'] = array(
         '#type' => 'submit',
         '#value' => t('Save settings'),
     );
 
+    if (isset($_GET['type']) && in_array($_GET['type'], array('question', 'answer'))) {
+        $result = db_query(
+            'SELECT * FROM {email_templates} t WHERE t.type = :type',
+            array(':type' => $_GET['type'])
+        )->fetchObject();
+
+        if (!empty($result)) {
+            $form['send_message_e-mail_subject']['#default_value'] = $result->subject;
+            $form['send_message_e-mail_text']['#default_value'] = $result->message;
+            $form['send_message_e-mail_type']['#default_value'] = $result->type;
+        }
+    }
+
     return $form;
+}
+
+function send_message_form_submit($form, &$form_state)
+{
+    if (isset($_GET['type']) && in_array($_GET['type'], array('question', 'answer'))) {
+        $query = db_query(
+            'SELECT * FROM {email_templates} t WHERE t.type = :type',
+            array(':type' => $_GET['type'])
+        )->fetchObject();
+
+        if (empty($query)) {
+            db_insert('email_templates')
+                ->fields(array(
+                    'type' => $form_state['values']['send_message_e-mail_type'],
+                    'subject' => $form_state['values']['send_message_e-mail_subject'],
+                    'message'   => $form_state['values']['send_message_e-mail_text'],
+                ))
+                ->execute();
+
+            drupal_set_message(t('Data has been successfully sent.'));
+        } else {
+            db_update('email_templates')
+                ->fields(array(
+                    'type' => $form_state['values']['send_message_e-mail_type'],
+                    'subject' => $form_state['values']['send_message_e-mail_subject'],
+                    'message'   => $form_state['values']['send_message_e-mail_text'],
+                ))
+                ->condition('type', $_GET['type'], '=')
+                ->execute();
+
+            drupal_set_message(t('Data has been update.'));
+        }
+    }
 }

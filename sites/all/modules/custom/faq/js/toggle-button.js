@@ -6,7 +6,7 @@
     $(document).ready(function(){
         $('.faq-forms').hide();
         $('.faq-button').click(function(){
-            $('.faq-forms').slideToggle('slow');
+            $('.faq-forms').slideToggle('normal');
         });
     });
 })(jQuery);

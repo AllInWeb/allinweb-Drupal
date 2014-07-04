@@ -103,7 +103,6 @@
 
     <?php if ($is_front): ?>
         <div class="slide-show">
-               <div class="shadow"><img src="/sites/all/themes/allinweb/images/shadow.png" alt=""/></div>
             <?php print render($page['slider']); ?>
         </div>
     <?php endif; ?>
