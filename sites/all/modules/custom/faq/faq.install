@@ -1,0 +1,143 @@
+<?php
+
+function faq_install() {
+    node_types_rebuild();
+    $types = node_type_get_types();
+    add_custom_fields();
+}
+
+function faq_uninstall() {
+    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+    $result = db_query($sql, array(':type' => 'question'));
+    $nodeids = array();
+    foreach ($result as $row) {
+        $nodeids[] = $row->nid;
+    }
+    node_delete_multiple($nodeids);
+    delete_custom_fields();
+    node_type_delete('question');
+    field_purge_batch(500);
+}
+ 
+function delete_custom_fields() {
+    foreach (array_keys(_faq_installed_fields()) as $field) {
+        field_delete_field($field);
+    }
+    $instances = field_info_instances('node', 'question');
+    foreach ($instances as $instance_name => $fieldinstance) {
+        field_delete_instance($fieldinstance);
+    }
+}
+
+function _faq_installed_fields() {
+    $t = get_t();
+    return array(
+        'yourname' => array(
+            'field_name'    => 'yourname',
+            'label'         => $t('Your name'),
+            'type'          => 'text'
+        ),
+        'youremail' => array(
+            'field_name'    => 'youremail',
+            'label'         => $t('Your email'),
+            'type'          => 'text'
+        ),
+        'question' => array(
+            'field_name'    => 'question',
+            'label'         => $t('Question'),
+            'type'          => 'text_long'
+        ),
+            'answer' => array(
+            'field_name'    => 'answer',
+            'label'         => $t('Ответ'),
+            'type'          => 'text_long'
+        )
+    );
+}
+ 
+function _faq_installed_instances() {
+    $t = get_t();
+    return array(
+        'yourname' => array(
+            'field_name'    => 'yourname',
+            'type'          => 'text',
+            'label'         => $t('ФИО'),
+            'required'      => TRUE,
+            'widget' => array(
+                'type'      => 'text_textfield'
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Your name'),
+                    'type'  => 'text'
+                )
+            )
+        ),
+        'youremail' => array(
+            'field_name'    => 'youremail',
+            'type'          => 'text',
+            'label'         => $t('Ваш email'),
+            'required'      => TRUE,
+            'widget' => array(
+                'type'      => 'text_textfield'
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Your email'),
+                    'type'  => 'text'
+                )
+            )
+        ),
+        'question' => array(
+            'field_name'    => 'question',
+            'type'          => 'text',
+            'label'         => $t('Question'),
+            'required'      => TRUE,
+            'widget' => array(
+                'type'      => 'text_textarea'
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Question'),
+                    'type'  => 'text'
+                ),
+                'teaser' => array(
+                    'label' => 'hidden',
+                    'type' => 'default',
+                ),
+            )
+        ),
+        'answer' => array(
+            'field_name'    => 'answer',
+            'type'          => 'text',
+            'label'         => $t('Ответ'),
+            'required'      => FALSE,
+            'widget' => array(
+                'type'      => 'text_textarea'
+            ),
+            'display' => array(
+                'example_node_list' => array(
+                    'label' => $t('Ответ'),
+                    'type'  => 'text'
+                ),
+                'teaser' => array(
+                    'label' => 'hidden',
+                    'type' => 'default',
+                ),
+            )
+        )
+    );
+}
+
+function add_custom_fields() {
+    foreach (_faq_installed_fields() as $field) {
+        field_create_field($field);
+    }
+    foreach (_faq_installed_instances() as $fieldinstance) {
+        $fieldinstance['entity_type'] = 'node';
+        $fieldinstance['bundle'] = 'question';
+        print_r($fieldinstance);
+        field_create_instance($fieldinstance);
+    }
+}
+

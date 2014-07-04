@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.faq-button {
+    background: #fc840d;
+    color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 110px;
+}
+

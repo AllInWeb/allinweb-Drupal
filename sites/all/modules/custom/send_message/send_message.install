@@ -1,0 +1,41 @@
+<?php
+/**
+ * Implements hook_schema().
+ */
+
+function send_message_schema()
+{
+    $schema['email_templates'] = array(
+        'description' => 'Table for module send massage',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for a record.',
+                'type'        => 'serial',
+                'unsigned'    => TRUE,
+                'not null'    => TRUE,
+        ),
+            'type' => array(
+                'description' => 'Type',
+                'type'        => 'varchar',
+                'length'      => 30,
+                'not null'    => TRUE,
+                'default'     => '',
+            ),
+            'subject' => array(
+                'description' => 'Subject',
+                'type'        => 'varchar',
+                'length'      => 255,
+                'not null'    => TRUE,
+                'default'     => '',
+            ),
+            'message' => array(
+                'description' => 'Text message.',
+                'type'        => 'text',
+                'not null'    => FALSE,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+
+    return $schema;
+}

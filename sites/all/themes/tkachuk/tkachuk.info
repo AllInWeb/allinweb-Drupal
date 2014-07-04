@@ -1,0 +1,19 @@
+name = Тестовая тема
+description = Описание тестовой темы
+version = 1.0
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/slideshow.css
+scripts[] = js/toggle.js
+
+
+regions[header] = Header
+regions[help] = Help
+regions[social] = Social Button
+regions[navigation] = Navigation menu
+regions[slider] = Slide show
+regions[faq] = FAQ
+regions[content] = Content
+regions[footer] = Footer

@@ -1,0 +1,244 @@
+<?php
+
+function faq_node_info()
+{
+    return array(
+        'question'      => array(
+            'name'          => t('Question'),
+            'base'          => 'question',
+            'description'   => t('Задать вопрос'),
+            'title_label'   => t('Title'),
+            'locked'        => TRUE,
+        ),
+    );
+}
+
+function question_form($node, $form_state)
+{
+    return node_content_form($node, $form_state);
+}
+
+function faq_form($node, $form_state)
+{
+    $form = array();
+
+    $form['theme'] = array(
+        '#type'             => 'textfield',
+        '#title'            => t('Тема вопроса'),
+        '#default_value'    => '',
+        '#required'         => TRUE,
+    );
+    $form['name'] = array(
+        '#type'             => 'textfield',
+        '#title'            => t('ФИО'),
+        '#default_value'    => '',
+        '#required'         => TRUE,
+    );
+
+    $form['email'] = array(
+        '#type'             => 'textfield',
+        '#title'            => t('Email'),
+        '#default_value'    => '',
+        '#required'         => TRUE,
+    );
+
+    $form['question'] = array(
+        '#type'             => 'textarea',
+        '#title'            => t('Question'),
+        '#default_value'    => '',
+        '#required'         => TRUE,
+    );
+
+    $form['submit'] = array(
+        '#type'             => 'submit',
+        '#value'            => t('Задать вопрос'),
+    );
+
+    return $form;
+}
+
+function faq_form_validate($form, &$form_state)
+{
+    if (!valid_email_address($form_state['values']['email'])) {
+        form_set_error('email', t('You must enter a valid e-mail address.'));
+    }
+}
+
+function main_function()
+{
+    $form = drupal_get_form('faq_form');
+
+    return theme('faq_template', array('form' => $form));
+}
+
+function faq_block_info()
+{
+    $blocks['myblock'] = array(
+        'info' => t('Задать вопрос'),
+        );
+
+    return $blocks;
+}
+
+function faq_block_view($delta = '')
+{
+    $block = array();
+    if ('myblock' == $delta) {
+        $block['content'] = main_function();
+    }
+
+    return $block;
+}
+
+function faq_theme()
+{
+    return array(
+        'faq_template' => array(
+            'template' => 'faq',
+            'render element' => 'form',
+            'path' => drupal_get_path('module', 'faq') . '/theme',
+            'arguments' => array('form' => NULL),
+        ),
+    );
+}
+
+function faq_form_submit($form, &$form_state)
+{
+    $node = new stdClass();
+    $node->title = $form_state['values']['theme'];
+    $node->yourname['und'][0]['value'] = $form_state['values']['name'];
+    $node->youremail['und'][0]['value'] = $form_state['values']['email'];
+    $node->question['und'][0]['value'] = $form_state['values']['question'];
+    $node->type = 'question';
+    $node->language = 'ru';
+    $node->status = 0;
+    $node->promote = 0;
+    $node->comment = 0;
+
+    $node = node_submit($node);
+    node_save($node);
+
+    drupal_set_message('Ваш вопрос успешно отправлен администратору!');
+}
+
+function faq_views_api() {
+    return array(
+        'api' => 3,
+    );
+}
+
+function faq_views_default_views()
+{
+    // Begin copy and paste of output from the Export tab of a view.
+    $view = new view;
+    $view->name = 'faq';
+    $view->description = 'Предсталвление для модуля "Задать вопрос"';
+    $view->tag = 'default';
+    $view->base_table = 'node';
+    $view->human_name = 'FAQ';
+    $view->core = 0;
+    $view->api_version = '3.0';
+    $view->disabled = FALSE;
+
+    /* Display: Master */
+    $handler = $view->new_display('default', 'Master', 'default');
+    $handler->display->display_options['access']['type'] = 'perm';
+    $handler->display->display_options['cache']['type'] = 'none';
+    $handler->display->display_options['query']['type'] = 'views_query';
+    $handler->display->display_options['query']['options']['query_comment'] = FALSE;
+    $handler->display->display_options['exposed_form']['type'] = 'basic';
+    $handler->display->display_options['pager']['type'] = 'full';
+    $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+    $handler->display->display_options['style_plugin'] = 'default';
+    $handler->display->display_options['row_plugin'] = 'node';
+
+    /* Sort criterion: Content: Post date */
+    $handler->display->display_options['sorts']['created']['id'] = 'created';
+    $handler->display->display_options['sorts']['created']['table'] = 'node';
+    $handler->display->display_options['sorts']['created']['field'] = 'created';
+    $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+
+    /* Filter criterion: Content: Published */
+    $handler->display->display_options['filters']['status']['id'] = 'status';
+    $handler->display->display_options['filters']['status']['table'] = 'node';
+    $handler->display->display_options['filters']['status']['field'] = 'status';
+    $handler->display->display_options['filters']['status']['value'] = '1';
+    $handler->display->display_options['filters']['status']['group'] = 0;
+    $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+
+    /* Filter criterion: Content: Type */
+    $handler->display->display_options['filters']['type']['id'] = 'type';
+    $handler->display->display_options['filters']['type']['table'] = 'node';
+    $handler->display->display_options['filters']['type']['field'] = 'type';
+    $handler->display->display_options['filters']['type']['value'] = array(
+        'question' => 'question',
+    );
+
+    /* Display: Page */
+    $handler = $view->new_display('page', 'Page', 'page');
+    $handler->display->display_options['path'] = 'faq';
+    $handler->display->display_options['menu']['type'] = 'normal';
+    $handler->display->display_options['menu']['title'] = 'FAQ';
+    $handler->display->display_options['menu']['name'] = 'main-menu';
+    $handler->display->display_options['menu']['weight'] = '0';
+
+    $handler->display->display_options['sitename_title'] = '1';
+
+    // (Export ends here.)
+
+    // Add view to list of views to provide.
+    $views[$view->name] = $view;
+
+    // ...Repeat all of the above for each view the module should provide.
+
+    // At the end, return array of default views.
+    return $views;
+}
+
+function faq_node_presave($node)
+{
+
+    if ($node->is_new && $node->type == 'question') {
+        mail_create_question($node);
+    }
+
+    if (!empty($node->answer['und'][0]['value']) && $node->status == 1 && $node->type == 'question') {
+        mail_answer_question($node);
+    }
+
+//    krumo($node);
+//    die();
+}
+
+function mail_create_question($node)
+{
+    $to = $node->youremail['und'][0]['value'];
+    drupal_mail('faq', 'quest', $to, language_default(), $params = array($body, $subject), $from = NULL, $send = TRUE);
+}
+
+function mail_answer_question($node)
+{
+    $message = 'Здраствуйте '.$node->yourname['und'][0]['value'].','; // Body of your email here.
+    $params = array(
+        'body' => $message,
+        'subject' => 'Администратор оставил Вам ответ.',
+    );
+    $to = $node->youremail['und'][0]['value'];
+    drupal_mail('faq', 'add_answer', $to, language_default(), $params, variable_get('site_email', ''), TRUE);
+}
+
+function faq_mail($key,&$message,$params)
+{
+
+    switch ($key) {
+        case 'add_question':
+            $message['subject']=t($params['subject']);
+            $message['body'][]=$params['body'];
+            break;
+
+        case 'add_answer':
+            $message['subject']=t($params['subject']);
+            $message['body'][]=$params['body'];
+            break;
+    }
+}

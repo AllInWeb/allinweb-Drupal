@@ -1,0 +1,2 @@
+<span id="views_slideshow_controls_text_next_<?php print $variables['vss_id']; ?>" class="<?php print $classes; ?>"><img
+        src="/sites/all/themes/allinweb/images/next.png" alt=""/></a></span>

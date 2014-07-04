@@ -1,0 +1,54 @@
+<?php
+
+/**
+* Implement hook_menu().
+*/
+
+function send_message_menu()
+{
+    $items = array();
+        $items['admin/config/system/send_massage'] = array(
+        'title' => t('Email templates'),
+        'description' => 'Отправка email',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('send_message_form'),
+        'access arguments' => array('administer users'),
+        'type' => MENU_NORMAL_ITEM,
+        );
+
+    return $items;
+}
+
+/**
+ * Implement hook_form().
+ */
+function send_message_form($form, &$form_state)
+{
+    $form['send_message_e-mail_subject'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Email subject'),
+        '#description' => t('The subject of the e-mail which will be sent
+to users.'),
+        '#size' => 40,
+        '#maxlength' => 120,
+        '#required' => TRUE,
+    );
+
+// Textarea for the body of the e-mail.
+    $form['send_message_e-mail_text'] = array(
+        '#type' => 'textarea',
+        '#rows' => 10,
+        '#columns' => 40,
+        '#title' => t('Email text'),
+        '#required' => TRUE,
+        '#description'=> t('The text of the email which will be sent to users.'),
+    );
+
+// Submit button
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Save settings'),
+    );
+
+    return $form;
+}

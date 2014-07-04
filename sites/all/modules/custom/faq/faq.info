@@ -1,0 +1,12 @@
+name = FAQ
+description = Модуль задать вопрос администратору.
+core = 7.x
+version = "7.x-1.0"
+
+dependencies[] = views
+
+stylesheets[all][] = css/styles.css
+scripts[] = js/toggle-button.js
+
+files[] = question.modules
+files[] = question.install
