@@ -197,7 +197,6 @@ function faq_views_default_views()
 
 function faq_node_presave($node)
 {
-
     if ($node->is_new && $node->type == 'question') {
         mail_create_question($node);
     }
@@ -205,23 +204,39 @@ function faq_node_presave($node)
     if (!empty($node->answer['und'][0]['value']) && $node->status == 1 && $node->type == 'question') {
         mail_answer_question($node);
     }
-
-//    krumo($node);
-//    die();
 }
 
 function mail_create_question($node)
 {
+    $message = db_query(
+        'SELECT message FROM {email_templates} WHERE `type`= :type',
+        array(':type' => 'question')
+    )->fetchField();
+    $subject = db_query(
+        'SELECT subject FROM {email_templates} WHERE `type`= :type',
+        array(':type' => 'question')
+    )->fetchField();
+    $params = array(
+        'body' => $message,
+        'subject' => $subject,
+    );
     $to = $node->youremail['und'][0]['value'];
-    drupal_mail('faq', 'quest', $to, language_default(), $params = array($body, $subject), $from = NULL, $send = TRUE);
+    drupal_mail('faq', 'add_question', $to, language_default(), $params, variable_get('site_email', ''), TRUE);
 }
 
 function mail_answer_question($node)
 {
-    $message = 'Здраствуйте '.$node->yourname['und'][0]['value'].','; // Body of your email here.
+    $message = db_query(
+        'SELECT message FROM {email_templates} WHERE `type`= :type',
+        array(':type' => 'answer')
+    )->fetchField();
+    $subject = db_query(
+        'SELECT subject FROM {email_templates} WHERE `type`= :type',
+        array(':type' => 'answer')
+    )->fetchField();
     $params = array(
         'body' => $message,
-        'subject' => 'Администратор оставил Вам ответ.',
+        'subject' => $subject,
     );
     $to = $node->youremail['und'][0]['value'];
     drupal_mail('faq', 'add_answer', $to, language_default(), $params, variable_get('site_email', ''), TRUE);
