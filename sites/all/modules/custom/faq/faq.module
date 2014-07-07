@@ -68,6 +68,19 @@ function main_function()
 {
     $form = drupal_get_form('faq_form');
 
+
+    $message = db_query(
+        'SELECT message FROM {email_templates} WHERE `type`= :type',
+        array(':type' => 'question'))
+        ->fetchField();
+
+
+    $message = tmpReplacer($message, array('username' => 'Игорь', 'useremail'=>'test'));
+
+
+    krumo($message);
+    exit;
+
     return theme('faq_template', array('form' => $form));
 }
 
@@ -210,12 +223,12 @@ function mail_create_question($node)
 {
     $message = db_query(
         'SELECT message FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'question')
-    )->fetchField();
+        array(':type' => 'question'))
+        ->fetchField();
     $subject = db_query(
         'SELECT subject FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'question')
-    )->fetchField();
+        array(':type' => 'question'))
+        ->fetchField();
     $params = array(
         'body' => $message,
         'subject' => $subject,
@@ -228,12 +241,13 @@ function mail_answer_question($node)
 {
     $message = db_query(
         'SELECT message FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'answer')
-    )->fetchField();
+        array(':type' => 'answer'))
+        ->fetchField();
     $subject = db_query(
         'SELECT subject FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'answer')
-    )->fetchField();
+        array(':type' => 'answer'))
+        ->fetchField();
+
     $params = array(
         'body' => $message,
         'subject' => $subject,
@@ -256,4 +270,22 @@ function faq_mail($key,&$message,$params)
             $message['body'][]=$params['body'];
             break;
     }
+}
+
+function tmpReplacer($tmpText, array $data = array()) {
+    // Массив ключевых слов которые нужно заменить. Напр. %username%, ...
+    // preg_match
+    $tmpText = db_query(
+        'SELECT message FROM {email_templates}')
+        ->fetchField();
+
+    preg_match("!\%(.*?)\%!si",$tmpText, $keys);
+
+    foreach ($keys as $key) {
+        if (!array_key_exists($key, $data)) continue;
+
+        $tmpText = str_replace("%$key%", $data[$key], $tmpText);
+    }
+
+    return $tmpText;
 }
