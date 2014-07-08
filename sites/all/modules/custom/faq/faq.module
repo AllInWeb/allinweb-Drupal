@@ -68,19 +68,6 @@ function main_function()
 {
     $form = drupal_get_form('faq_form');
 
-
-    $message = db_query(
-        'SELECT message FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'question'))
-        ->fetchField();
-
-
-    $message = tmpReplacer($message, array('username' => 'Игорь', 'useremail'=>'test'));
-
-
-    krumo($message);
-    exit;
-
     return theme('faq_template', array('form' => $form));
 }
 
@@ -221,65 +208,51 @@ function faq_node_presave($node)
 
 function mail_create_question($node)
 {
-    $message = db_query(
-        'SELECT message FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'question'))
-        ->fetchField();
-    $subject = db_query(
-        'SELECT subject FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'question'))
-        ->fetchField();
-    $params = array(
-        'body' => $message,
-        'subject' => $subject,
-    );
-    $to = $node->youremail['und'][0]['value'];
-    drupal_mail('faq', 'add_question', $to, language_default(), $params, variable_get('site_email', ''), TRUE);
+    faq_send_email($node, 'question');
 }
 
 function mail_answer_question($node)
 {
-    $message = db_query(
-        'SELECT message FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'answer'))
-        ->fetchField();
-    $subject = db_query(
-        'SELECT subject FROM {email_templates} WHERE `type`= :type',
-        array(':type' => 'answer'))
-        ->fetchField();
-
-    $params = array(
-        'body' => $message,
-        'subject' => $subject,
-    );
-    $to = $node->youremail['und'][0]['value'];
-    drupal_mail('faq', 'add_answer', $to, language_default(), $params, variable_get('site_email', ''), TRUE);
+    faq_send_email($node, 'answer');
 }
 
-function faq_mail($key,&$message,$params)
+function faq_send_email($node, $type) {
+    $template = db_query('SELECT message, subject FROM {email_templates} WHERE `type`= :type',
+        array(':type' => $type))
+        ->fetchAssoc();
+
+    // данные для шаблона
+    $data = array(
+        'username' => $node->yourname['und'][0]['value'],
+        'useremail' => $node->youremail['und'][0]['value'],
+        'message' => $node->question['und'][0]['value'],
+    );
+
+    drupal_mail(
+        'faq',
+        'add_' . $type,
+        $node->youremail['und'][0]['value'],
+        language_default(),
+        array(
+            'body' => tmpReplacer($template['message'], $data),
+            'subject' => $template['subject'],
+        ),
+        variable_get('site_email', '')
+    );
+}
+
+function faq_mail($key, &$message, $params)
 {
-
-    switch ($key) {
-        case 'add_question':
-            $message['subject']=t($params['subject']);
-            $message['body'][]=$params['body'];
-            break;
-
-        case 'add_answer':
-            $message['subject']=t($params['subject']);
-            $message['body'][]=$params['body'];
-            break;
+    if (in_array($key, array('add_question', 'add_answer'))) {
+        $message['subject'] = t($params['subject']);
+        $message['body'][] = $params['body'];
     }
 }
 
-function tmpReplacer($tmpText, array $data = array()) {
-    // Массив ключевых слов которые нужно заменить. Напр. %username%, ...
-    // preg_match
-    $tmpText = db_query(
-        'SELECT message FROM {email_templates}')
-        ->fetchField();
-
-    preg_match("!\%(.*?)\%!si",$tmpText, $keys);
+function tmpReplacer($tmpText, $data = array()) {
+    // Формируем массив ключевых слов которые нужно заменить. Напр. %username%, ...
+    preg_match_all("/\%(.*?)\%/",$tmpText, $keys);
+    $keys = $keys[1];
 
     foreach ($keys as $key) {
         if (!array_key_exists($key, $data)) continue;
