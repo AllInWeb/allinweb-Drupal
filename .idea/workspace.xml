@@ -2,123 +2,123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e7aa08d-e729-4de8-867d-756e14f1661f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/arrow-right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/js/scroll-menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.drush.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/Untitled-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.install" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/jquery.treeTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-slideshow-controls-text-next.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--portfolio.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/screenshot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/tabs-border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/logo_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/tests/token_test.module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/js/toggle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/allinweb.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/styles/large/public/552893-1366x768.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/arrow-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/Untitled-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.module" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-slideshow-controls-text-previous.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--contacts.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--question.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.tokens.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.pages.inc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--rates.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-view-table--tarify.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/jquery.treeTable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/tests/token_test.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/README.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/styles/large/public/test_0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/arrow-down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.drush.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/js/scroll-menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/html.tpl.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.test" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/test_0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/allinweb/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_qIG1Fn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/languages/ru_RW1sAz8qd0kReGV_ABA91E84PkAhoH-Yuw0K4b0m3wc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_rzYZAW.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/drupal.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_2BQK4O.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_BcEdZD.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_MkeKqf.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/faq/faq.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_EPbuk5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_uN9mZP.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/faq/faq.install" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_61mMVf.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_2BQK4O.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_ceEBZq.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dump19_06.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/allinweb/images/all in web.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_KuoAMu.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_im2aH7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree_plugin_style_tree.inc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_D5owcF.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_BcEdZD.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/faq/faq.module" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_CQxncS.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_KuoAMu.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/field/image/imagefield_rzYZAW.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_D5owcF.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_U0HZNv.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_61mMVf.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree.module" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_MkeKqf.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_im2aH7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_2BQK4O.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_VGG8k2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/field/image/imagefield_MkeKqf.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_BcEdZD.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_rzYZAW.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_uN9mZP.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/allinweb/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_ceEBZq.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_qIG1Fn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree.views.inc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dump17.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_KuoAMu.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/field/image/imagefield_2BQK4O.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_EPbuk5.gif" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.tokens.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--rates.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/shadow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-view-table--tarify.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--question.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/jquery.treeTable.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/Untitled-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/Untitled-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/tests/token_test.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-slideshow-controls-text-previous.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/logo_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--portfolio.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/default/files/styles/large/public/552893-1366x768.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/allinweb.info" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/tests/token_test.module" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--contacts.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.install" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/images/tabs-border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/js/toggle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/jquery.treeTable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/screenshot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/token.pages.inc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-slideshow-controls-text-next.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sites/all/modules/token/arrow-right.png" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_rzYZAW.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_im2aH7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree_plugin_style_tree.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/test_0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_ceEBZq.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/faq/faq.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_KuoAMu.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_CQxncS.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_rzYZAW.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_qIG1Fn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dump19_06.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/field/image/imagefield_rzYZAW.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_EPbuk5.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/faq/faq.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_MkeKqf.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_im2aH7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_BcEdZD.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/field/image/imagefield_MkeKqf.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_MkeKqf.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_61mMVf.jpeg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_CQxncS.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_BcEdZD.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_uN9mZP.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_KuoAMu.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_2BQK4O.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_D5owcF.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree.views.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_im2aH7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_2BQK4O.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_uN9mZP.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_D5owcF.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_BcEdZD.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_U0HZNv.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_D5owcF.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_qIG1Fn.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_KuoAMu.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/faq/faq.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_im2aH7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_uN9mZP.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_VGG8k2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_ceEBZq.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/allinweb/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/modules/views_tree/views_tree.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/field/image/imagefield_2BQK4O.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/allinweb/images/all in web.psd" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/field/image/imagefield_im2aH7.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/green/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/green/skin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/node_access_example/node_access_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/node_access_example/node_access_example.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.js" afterPath="$PROJECT_DIR$/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_EPbuk5.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drupal.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_rzYZAW.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dump17.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/field/image/imagefield_61mMVf.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/medium/public/field/image/imagefield_D5owcF.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/thumbnail/public/field/image/imagefield_2BQK4O.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/languages/ru_RW1sAz8qd0kReGV_ABA91E84PkAhoH-Yuw0K4b0m3wc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/all/themes/allinweb/images/logo.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/nodeapi_example/nodeapi_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/nodeapi_example/nodeapi_example.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/white/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/white/skin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/page_example/page_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/page_example/page_example.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/LICENSE.txt" afterPath="$PROJECT_DIR$/sites/all/modules/examples/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/block_example/block_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/block_example/block_example.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/node_example/node_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/node_example/node_example.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/lib/classTree.js" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/lib/classTree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/stylesheet.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/blue/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/blue/skin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/banner.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/banner.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/default/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/default/skin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/js_example/js_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/js_example/js_example.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/_class.krumo.php.html" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/_class.krumo.php.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.install" afterPath="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/krumo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/green/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/green/skin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/blue/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/blue/skin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/page_example/page_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/page_example/page_example.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/block_example/block_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/block_example/block_example.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.js" afterPath="$PROJECT_DIR$/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/filter_example/filter_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/filter_example/filter_example.module" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js" afterPath="$PROJECT_DIR$/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/lib/classTree.js" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/lib/classTree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/node_access_example/node_access_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/node_access_example/node_access_example.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/js_example/js_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/js_example/js_example.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/node_example/node_example.module" afterPath="$PROJECT_DIR$/sites/all/modules/examples/node_example/node_example.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/stylesheet.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/krumo.html" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/krumo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/banner.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/media/banner.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/white/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/white/skin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/default/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/default/skin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/orange/skin.css" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/skins/orange/skin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/_class.krumo.php.html" afterPath="$PROJECT_DIR$/sites/all/modules/devel/krumo/docs/Krumo/_class.krumo.php.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/examples/LICENSE.txt" afterPath="$PROJECT_DIR$/sites/all/modules/examples/LICENSE.txt" />
     </list>
     <ignored path="drupal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -141,52 +141,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="send_message.info" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.info">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="29" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="send_message.install" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.install">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="1" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.81663835" vertical-offset="203" max-vertical-offset="792">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="faq.install" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/faq/faq.install">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="31" selection-start="3583" selection-end="3583" vertical-scroll-proportion="-38.0" vertical-offset="1080" max-vertical-offset="2682">
-              <folding>
-                <marker date="1404202161000" expanded="true" signature="161:206" placeholder="SELECT nid F..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views-view-table--tarify.tpl.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views-view-table--tarify.tpl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-view-table--tarify.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="513" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="send_message.module" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="69" selection-start="2984" selection-end="2984" vertical-scroll-proportion="0.18518518" vertical-offset="1859" max-vertical-offset="2448">
+            <state line="7" column="36" selection-start="309" selection-end="309" vertical-scroll-proportion="0.20521173" vertical-offset="0" max-vertical-offset="614">
               <folding>
-                <element signature="e#7#38#0" expanded="true" />
-                <marker date="1404480630192" expanded="true" signature="2294:2348" placeholder="SELECT * FRO..." />
-                <marker date="1404480630192" expanded="true" signature="2928:2982" placeholder="SELECT * FRO..." />
+                <marker date="1404831211147" expanded="true" signature="512:691" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -195,7 +155,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="494" column="27" selection-start="9577" selection-end="9593" vertical-scroll-proportion="0.0" vertical-offset="8640" max-vertical-offset="10188">
+            <state line="531" column="16" selection-start="9982" selection-end="9982" vertical-scroll-proportion="0.0" vertical-offset="8755" max-vertical-offset="10782">
               <folding />
             </state>
           </provider>
@@ -255,16 +215,16 @@
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--rates.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/send_massage/send_messege.module" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/js/scroll-menu.js" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/js/toggle.js" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/faq/css/styles.css" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/faq/js/toggle-button.js" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/css/style.css" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-view-table--tarify.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.install" />
       </list>
     </option>
   </component>
@@ -518,10 +478,6 @@
               <option name="myItemId" value="custom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="faq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -538,6 +494,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drupal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drupal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drupal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drupal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -625,7 +613,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31016043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25439265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -633,12 +621,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -657,7 +645,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="send email" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module">
@@ -718,11 +708,6 @@
     <entry file="file://$PROJECT_DIR$/sites/all/modules/views_slideshow/theme/views-slideshow-pager-fields.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.09168082" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/views_slideshow/theme/views-slideshow.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="806" selection-end="806" vertical-scroll-proportion="0.84719867" vertical-offset="77" max-vertical-offset="684" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/views_slideshow/views_slideshow.api.php">
@@ -820,11 +805,6 @@
         <state line="3" column="0" selection-start="73" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-slideshow.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="579" selection-end="579" vertical-scroll-proportion="0.39728352" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/js/scroll-menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="35" selection-start="143" selection-end="143" vertical-scroll-proportion="0.14610389" vertical-offset="0" max-vertical-offset="616" />
@@ -843,11 +823,6 @@
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/faq/theme/faq.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="41" selection-start="64" selection-end="64" vertical-scroll-proportion="0.030560272" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="36" selection-start="6725" selection-end="6725" vertical-scroll-proportion="0.22222222" vertical-offset="3796" max-vertical-offset="4482" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php">
@@ -875,59 +850,24 @@
         <state line="14" column="31" selection-start="410" selection-end="410" vertical-scroll-proportion="0.38474295" vertical-offset="20" max-vertical-offset="648" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="494" column="27" selection-start="9577" selection-end="9593" vertical-scroll-proportion="0.0" vertical-offset="8640" max-vertical-offset="10188">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/common.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2430" column="35" selection-start="82625" selection-end="82625" vertical-scroll-proportion="-1.0572916" vertical-offset="44241" max-vertical-offset="148320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-view-table--tarify.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding />
-        </state>
+        <state line="2430" column="35" selection-start="82625" selection-end="82625" vertical-scroll-proportion="-1.0572916" vertical-offset="44241" max-vertical-offset="148320" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--rates.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.info">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="69" selection-start="2984" selection-end="2984" vertical-scroll-proportion="0.18518518" vertical-offset="1859" max-vertical-offset="2448">
-          <folding>
-            <element signature="e#7#38#0" expanded="true" />
-            <marker date="1404480630192" expanded="true" signature="2294:2348" placeholder="SELECT * FRO..." />
-            <marker date="1404480630192" expanded="true" signature="2928:2982" placeholder="SELECT * FRO..." />
-          </folding>
-        </state>
+        <state line="5" column="29" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/faq/faq.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="31" selection-start="3583" selection-end="3583" vertical-scroll-proportion="-38.0" vertical-offset="1080" max-vertical-offset="2682">
-          <folding>
-            <marker date="1404202161000" expanded="true" signature="161:206" placeholder="SELECT nid F..." />
-          </folding>
-        </state>
+        <state line="96" column="46" selection-start="2911" selection-end="2911" vertical-scroll-proportion="1.672326" vertical-offset="743" max-vertical-offset="2682" />
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -935,12 +875,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.install">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.81663835" vertical-offset="203" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="21" column="36" selection-start="660" selection-end="660" vertical-scroll-proportion="0.58064514" vertical-offset="0" max-vertical-offset="792" />
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/views/theme/views-view-table.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/views_slideshow/theme/views-slideshow.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="806" selection-end="806" vertical-scroll-proportion="0.67232597" vertical-offset="0" max-vertical-offset="589" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="0" selection-start="3460" selection-end="3460" vertical-scroll-proportion="-10.740741" vertical-offset="1744" max-vertical-offset="2412" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/faq/faq.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="1" selection-start="7945" selection-end="7945" vertical-scroll-proportion="1.4397395" vertical-offset="3850" max-vertical-offset="4842" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="531" column="16" selection-start="9982" selection-end="9982" vertical-scroll-proportion="0.0" vertical-offset="8755" max-vertical-offset="10782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-view-table--tarify.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="309" selection-end="309" vertical-scroll-proportion="0.20521173" vertical-offset="0" max-vertical-offset="614">
+          <folding>
+            <marker date="1404831211147" expanded="true" signature="512:691" placeholder="..." />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

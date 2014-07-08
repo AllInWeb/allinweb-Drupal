@@ -491,12 +491,45 @@ ul.action-links li a {
     color: #fff;
 }
 
-.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;margin: auto}
-.tg td{padding:10px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-.tg th{font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+/* ----- Таблица тарифов ----- */
+
+tbody {
+    border: none;
+}
+
+.tg  {
+    width: 100%;
+}
+
+td {padding: 10px 0;}
+
+.title-td {
+    text-align: right;
+    width: 170px;
+}
+
+.parent-td {
+    text-align: left;
+    color: #FF6600;
+    border-bottom: 1px solid #ff6600;
+}
+
+.normal-td{
+    padding:10px;
+    overflow:hidden;
+    min-width: 100px;
+    color:#333;
+    text-align: center;
+}
+
 .tg a {
     color: #333333;
     text-decoration: none;
+}
+
+tr td.normal-td .read_more a {
+    background: #ff6600;
+    color: #fff;
 }
 
 /* ---------------- Buttons    ---------------- */

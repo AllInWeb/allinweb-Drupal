@@ -4,10 +4,16 @@
         $alias = isset($term->field_alias['und'][0]['value']) ? $term->field_alias['und'][0]['value'] : null; ?>
 
         <tr>
-            <td><?php print $term->name ?></td>
+            <?php
+                if (empty($alias)) {
+                    print '<td class="parent-td">'.$term->name.'</td>';
+                } else {
+                    print '<td class="title-td">'.$term->name.'</td>';
+                }
+            ?>
 
             <?php foreach ($rows as $item): ?>
-                <td><?php print !empty($item[$alias]) ? $item[$alias] : '' ?></td>
+                <td class="normal-td"><?php print !empty($item[$alias]) ? $item[$alias] : '' ?></td>
             <?php endforeach ?>
         </tr>
 
