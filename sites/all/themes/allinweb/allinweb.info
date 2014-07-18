@@ -6,10 +6,7 @@ engine = phptemplate
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/faq.css
-scripts[] = js/scroll-menu.js
-scripts[] = js/toggle.js
 scripts[] = js/toggle-faq.js
-
 
 regions[header] = Header
 regions[help] = Help

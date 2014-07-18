@@ -142,6 +142,7 @@ function faq_views_default_views()
 
     /* Display: Master */
     $handler = $view->new_display('default', 'Master', 'default');
+    $handler->display->display_options['title'] = 'FAQ/ЧаВо';
     $handler->display->display_options['access']['type'] = 'perm';
     $handler->display->display_options['cache']['type'] = 'none';
     $handler->display->display_options['query']['type'] = 'views_query';
@@ -178,7 +179,7 @@ function faq_views_default_views()
     $handler = $view->new_display('page', 'Page', 'page');
     $handler->display->display_options['path'] = 'faq';
     $handler->display->display_options['menu']['type'] = 'normal';
-    $handler->display->display_options['menu']['title'] = 'FAQ';
+    $handler->display->display_options['menu']['title'] = 'Задать вопрос';
     $handler->display->display_options['menu']['name'] = 'main-menu';
     $handler->display->display_options['menu']['weight'] = '0';
 

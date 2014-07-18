@@ -9,6 +9,8 @@ img {
     border: none;
 }
 
+a.cboxElement {outline:0;}
+
 html {
     position:relative;
     min-height:100%;
@@ -55,17 +57,37 @@ h1, h2, h3, h4, h5, h6 {
                     text-decoration: underline;
                 }
 
+/* ----- Социальные кнопки ----- */
 .social-button {
     float: right;
 }
 
-    .social-button a {
-        margin-left: 10px;
-        opacity: 0.5;
+    .tw, .fb, .vk {
+        display: block;
+        width: 13px;
+        height: 18px;
+        float: left;
+        margin-left: 8px;
     }
 
-        .social-button a:hover {
-            opacity: 1;
+    .tw {
+        background: url("../images/social.png") 0px 2px no-repeat;
+    }
+    .fb {
+        background: url("../images/social.png") 0px -50px no-repeat;
+    }
+    .vk {
+        background: url("../images/social.png") 0px -98px no-repeat;
+    }
+
+        .tw:hover {
+            background-position: 0px -24px;
+        }
+        .fb:hover {
+            background-position: 0px -76px;
+        }
+        .vk:hover {
+            background-position: 0px -124px;
         }
 
 .wrapper, .footer, .bottom-blocks, .header {
@@ -80,24 +102,13 @@ h1, h2, h3, h4, h5, h6 {
 .bottom {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    min-width: 100%;
 }
 
 .header-main {
     border-bottom: 1px solid #cbcbcb;
     background: #fff;
-    z-index: 9999;
 }
-
-    .f-nav {
-        z-index: 9999;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        opacity: 0.9;
-        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
-    }
 
 .header {
     padding: 20px 0 30px 0;
@@ -106,15 +117,17 @@ h1, h2, h3, h4, h5, h6 {
     .logo {
         margin: 0 60px 0 35px;
         float: left;
+        max-width: 244px;
+        max-height: 73px;
+        overflow: hidden;
     }
 
-        .logo img {
-            max-width: 244px;
-            max-height: 67px;
-        }
+.logo img {
+    max-width: 244px;
+}
 
-            .logo img:hover {
-                opacity: 0.8;
+            .logo:hover img{
+                margin-top: -75px;
             }
 
 .clear {
@@ -125,10 +138,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation {
     margin-top: 25px;
+    float: left;
 }
 
     .sf-menu.menu li {
-        margin-right: 40px;
+        margin-right: 35px;
     }
 
     ul.menu li {
@@ -226,18 +240,28 @@ a.menuparent.active {
 
     #views_slideshow_controls_text_next_new_slider-block {
         position: absolute; top:170px; z-index:100; right:10px;
+        width: 54px;
+        height: 54px;
     }
 
     #views_slideshow_controls_text_previous_new_slider-block {
         position: absolute; top:170px; z-index:100; left:10px;
+        width: 54px;
+        height: 54px;
     }
 
-    .views-slideshow-controls-text-previous, .views-slideshow-controls-text-next {
-        opacity: 0.5;
+    .views-slideshow-controls-text-previous{
+        background: url(../images/prev-r.png);
+        background-position: 0px 0px;
     }
 
-    .views-slideshow-controls-text-previous:hover, .views-slideshow-controls-text-next:hover {
-        opacity: 1;
+    .views-slideshow-controls-text-next {
+        background: url(../images/next-r.png);
+        background-position: 0px 0px;
+    }
+
+    .views-slideshow-controls-text-previous:hover, .views-slideshow-controls-text-next:hover{
+        background-position: 0px -64px;
     }
 
     .views-field-field-link a {
@@ -253,14 +277,18 @@ a.menuparent.active {
         right: 15px;
         width: 480px;
         bottom: 10px;
-        background: #ffffff;
+        background: #727272;
         padding: 5px 5px 10px 20px;
-        opacity: 0.9;
+        color: #fff;
         display: inline;
+        opacity: 0.9;
+        -moz-opacity: 0.9;
+        -khtml-opacity: 0.9;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
     }
 
             .description h2 a {
-                color: #ff3300;
+                color: #fff;
                 font-size: 24px;
                 text-decoration: none;
                 display: block;
@@ -275,7 +303,7 @@ a.menuparent.active {
 
 
 .content-main {
-    padding: 0 15px;
+    padding: 0 15px 20px;
     margin: 20px 0 50px 0;
 }
 
@@ -491,13 +519,17 @@ ul.action-links li a {
     color: #fff;
 }
 
+.view-faq > div {
+    margin-bottom: 30px;
+}
+
 /* ----- Таблица тарифов ----- */
 
 tbody {
     border: none;
 }
 
-.tg  {
+.tg {
     width: 100%;
 }
 
@@ -508,29 +540,43 @@ td {padding: 10px 0;}
     width: 170px;
 }
 
+.rate-info tr td.title-td {
+    width: 50%;
+}
+
 .parent-td {
     text-align: left;
     color: #FF6600;
     border-bottom: 1px solid #ff6600;
 }
 
-.normal-td{
+.normal-td {
     padding:10px;
-    overflow:hidden;
     min-width: 100px;
-    color:#333;
     text-align: center;
 }
 
-.tg a {
-    color: #333333;
+.normal-td a {
+    color: #fff;
+    font-size: 12px;
+    background: #ff6600;
+    padding: 5px 15px;
     text-decoration: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
 }
 
-tr td.normal-td .read_more a {
-    background: #ff6600;
-    color: #fff;
+.normal-td a:hover {
+    color: #ffcc66;
 }
+
+.orange-td {
+    color: #ff6600;
+}
+
+
 
 /* ---------------- Buttons    ---------------- */
 
@@ -591,3 +637,42 @@ a.button:active {
         height: 150px;
     }
 
+.contact-block {
+    width: 485px;
+    float: left;
+}
+
+.map-block {
+    float: left;
+    margin: 0 20px;
+}
+
+/* ----- Пагинатор ----- */
+
+.item-list ul li {
+    margin: 0;
+}
+
+.item-list .pager li {
+    padding: 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+
+.item-list .pager li a {
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: inherit;
+}
+
+.pager li.pager-current {
+    padding: 5px 10px;
+    font-weight: normal;
+    background: #ff6600;
+    color: #ffffff;
+    border: 1px solid #ff6600;
+}

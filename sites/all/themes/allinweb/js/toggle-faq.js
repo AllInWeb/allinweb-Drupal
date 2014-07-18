@@ -8,21 +8,17 @@
         //Add Inactive Class To All Accordion Headers
         $('.accordion-header').toggleClass('inactive-header');
 
-        //Set The Accordion Content Width
-        var contentwidth = $('.accordion-header').width();
-        $('.accordion-content').css({'width' : contentwidth });
-
         // The Accordion Effect
         $('.accordion-header').click(function () {
             if($(this).is('.inactive-header')) {
-                $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
+                $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle('normal').toggleClass('open-content');
                 $(this).toggleClass('active-header').toggleClass('inactive-header');
-                $(this).next().slideToggle().toggleClass('open-content');
+                $(this).next().slideToggle('fast').toggleClass('open-content');
             }
 
             else {
                 $(this).toggleClass('active-header').toggleClass('inactive-header');
-                $(this).next().slideToggle().toggleClass('open-content');
+                $(this).next().slideToggle('fast').toggleClass('open-content');
             }
         });
 
