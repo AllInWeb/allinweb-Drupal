@@ -9,7 +9,7 @@ function allinweb_pager($variables) {
     $element = $variables['element'];
     $parameters = $variables['parameters'];
     $quantity = $variables['quantity'];
-    global $pager_page_array, $pager_total, $theme;
+    global $pager_page_array, $pager_total;
 
     // Calculate various markers within this pager piece:
     // Middle is used to "center" pages around the current page.
@@ -38,22 +38,13 @@ function allinweb_pager($variables) {
     }
     // End of generation loop preparation.
 
-    $li_first = theme('pager_first', array('text' => 1, 'element' => $element, 'parameters' => $parameters));
-    $li_last = theme('pager_last', array('text' => $pager_max, 'element' => $element, 'parameters' => $parameters));
 
-    // First-page link display condition
-    $show_first = ($i > 1) ? true : false;
+    if ($pager_total[$element] > 1) {
 
-        if ($show_first && $li_first) {
-            $items[] = array(
-                'class' => array('pager-first'),
-                'data' => $li_first,
-            );
-        }
 
         // When there is more than one page, create the pager list.
         if ($i != $pager_max) {
-            if ($i > 2) {
+            if ($i > 1) {
                 $items[] = array(
                     'class' => array('pager-ellipsis'),
                     'data' => '…',
@@ -70,7 +61,7 @@ function allinweb_pager($variables) {
                 if ($i == $pager_current) {
                     $items[] = array(
                         'class' => array('pager-current'),
-                        'data' => '<span>' . $i . '</span>',
+                        'data' => $i,
                     );
                 }
                 if ($i > $pager_current) {
@@ -88,20 +79,9 @@ function allinweb_pager($variables) {
             }
         }
 
-        // Last-page link display condition
-        $show_last = ($pager_max > ($i-1)) ? true : false;
-
-        // End generation.
-        if ($show_last && $li_last) {
-            $items[] = array(
-                'class' => 'pager-last',
-                'data' => $li_last,
-            );
-        }
-
         return '<h2 class="element-invisible">' . t('Pages') . '</h2>' . theme('item_list', array(
             'items' => $items,
             'attributes' => array('class' => array('pager')),
         ));
-
+    }
 }
