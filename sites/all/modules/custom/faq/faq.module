@@ -21,7 +21,7 @@ function question_form($node, $form_state)
 function faq_form($node, $form_state)
 {
     $form = array();
-
+    $form['#attributes']['class'][] = 'quest';
     $form['theme'] = array(
         '#type'             => 'textfield',
         '#title'            => t('Тема вопроса'),
@@ -47,6 +47,7 @@ function faq_form($node, $form_state)
         '#title'            => t('Question'),
         '#default_value'    => '',
         '#required'         => TRUE,
+        '#resizable'        => false,
     );
 
     $form['submit'] = array(
