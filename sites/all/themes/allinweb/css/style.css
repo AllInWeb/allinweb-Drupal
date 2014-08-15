@@ -630,14 +630,31 @@ a.button:active {
                 text-decoration: underline;
             }
 
-.portfolio-full {
-    float: left;
+.view-portfel {
+    text-align: center;
 }
 
-    .gallery img {
-        width: 250px;
-        height: 150px;
+    .view-portfel tr td a img:first-child {
+        float: left;
+        margin-right: 10px;
     }
+
+    .view-portfel tr td a img:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    .view-portfel h2 a {
+        color: #ff6600;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    span.site_link a {
+        color: #ff3300;
+    }
+
+
+
 
 .contact-block {
     width: 485px;
@@ -677,4 +694,14 @@ a.button:active {
     background: #ff6600;
     color: #ffffff;
     border: 1px solid #ff6600;
+}
+
+.field-name-field-image {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.field-name-field-image img {
+    float: left;
+    margin: 15px 13px;
 }
