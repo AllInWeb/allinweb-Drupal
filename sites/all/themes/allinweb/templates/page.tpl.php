@@ -88,7 +88,7 @@
 <div class="header-main">
     <div class="header">
         <div class="logo">
-            <a href="/"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/></a>
+            <a href="<?php print $front_page; ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/></a>
         </div>
         <div class="navigation">
             <?php print render($page['navigation']); ?>

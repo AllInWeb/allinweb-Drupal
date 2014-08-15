@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e7aa08d-e729-4de8-867d-756e14f1661f" name="Default" comment="" />
+    <list default="true" id="2e7aa08d-e729-4de8-867d-756e14f1661f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php" />
+    </list>
     <ignored path="drupal.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,11 +61,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.060913704" vertical-offset="0" max-vertical-offset="591">
+            <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="-1.44" vertical-offset="0" max-vertical-offset="144">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.tpl.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="10" selection-start="3909" selection-end="3909" vertical-scroll-proportion="0.6545139" vertical-offset="1351" max-vertical-offset="2790">
+              <folding>
+                <element signature="e#7#3219#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +144,6 @@
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/js/scroll-menu.js" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/allinweb.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/js/toggle-faq.js" />
-        <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--contacts.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-slideshow.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/send_message/send_message.module" />
@@ -150,6 +162,7 @@
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/css/style.css" />
         <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/node--portfolio.tpl.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php" />
       </list>
     </option>
   </component>
@@ -614,11 +627,6 @@
         <state line="1" column="0" selection-start="144" selection-end="144" vertical-scroll-proportion="0.03125" vertical-offset="0" max-vertical-offset="576" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="29" selection-start="5318" selection-end="5318" vertical-scroll-proportion="2.0665557" vertical-offset="0" max-vertical-offset="1530" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/views-slideshow-controls-text-next.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.03125" vertical-offset="0" max-vertical-offset="576" />
@@ -726,8 +734,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.060913704" vertical-offset="0" max-vertical-offset="591">
+        <state line="2" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="-1.44" vertical-offset="0" max-vertical-offset="144">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/allinweb/templates/page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="10" selection-start="3909" selection-end="3909" vertical-scroll-proportion="0.6545139" vertical-offset="1351" max-vertical-offset="2790">
+          <folding>
+            <element signature="e#7#3219#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
