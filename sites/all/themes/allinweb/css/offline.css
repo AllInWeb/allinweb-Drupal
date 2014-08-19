@@ -1,0 +1,16 @@
+#page {
+    margin: 10% auto 0;
+    width: 50%;
+    text-align: center;
+}
+
+#logo-title {
+    max-height: 106px;
+    overflow: hidden;
+    width: 348px;
+    margin: 0 auto 20px;
+}
+
+#logo-title:hover img{
+    margin-top: -107px;
+}

@@ -6,15 +6,14 @@ engine = phptemplate
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/faq.css
+stylesheets[all][] = css/offline.css
 scripts[] = js/toggle-faq.js
 
-regions[header] = Header
 regions[help] = Help
 regions[social] = Social Button
 regions[top-contacts] = Top contacts
-regions[footer-contacts] = Footer contacts
 regions[navigation] = Navigation menu
 regions[slider] = Slide show
 regions[faq] = FAQ
 regions[content] = Content
-regions[footer] = Footer
+regions[footer-contacts] = Footer contacts
