@@ -632,14 +632,12 @@ a.button:active {
 
 .view-portfel {
     text-align: center;
+    margin-left: 40px;
 }
 
     .view-portfel tr td a img:first-child {
         float: left;
         margin-right: 10px;
-    }
-
-    .view-portfel tr td a img:nth-child(1) {
         margin-bottom: 20px;
     }
 
